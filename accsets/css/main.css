@@ -412,6 +412,7 @@ body {
 #sidebar .box-layout .sidebar-title-left {
     color:#568c3e;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .box-chothue a {
@@ -424,6 +425,9 @@ body {
     font-size: 14px;
     
 }
+.box-chothue a:hover {
+    color:#568c3e;
+}
 
 
 .box-chothue .box-chothue-text {
@@ -435,4 +439,58 @@ body {
 .box-chothue .box-chothue-text i {
     font-size: 12px;
     opacity: 0.2;
+    padding-right: 3px;
+}
+
+.box-gia .price-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột */
+}
+
+.box-gia .price-grid i {
+    font-size: 12px;
+    opacity: 0.2;
+    padding-right: 3px;
+
+}
+.box-gia .price-grid>a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding: 7px 0;
+    border-bottom: 2px solid #EEEEEE;
+
+}
+
+.box-gia .price-grid>a:hover {
+    color:#568c3e;
+}
+
+.box-dientich {
+
+}
+.box-dientich .dientich-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-template-rows: repeat(3, 1fr); /* 3 dòng */
+}
+
+.box-dientich .dientich-grid i {
+    font-size: 12px;
+    opacity: 0.2;
+    padding-right: 3px;
+}
+
+.box-dientich .dientich-grid>a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    padding: 7px 0;
+    border-bottom: 2px solid #EEEEEE;
+}
+
+.box-dientich .dientich-grid>a:hover {
+    color:#568c3e;
 }
