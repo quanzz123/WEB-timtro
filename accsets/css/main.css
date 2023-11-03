@@ -398,6 +398,22 @@ body {
 #sidebar {
    
     width: 40%;
-    background-color: #568c3e;
+    /* background-color: #568c3e; */
     
+}
+
+#sidebar .box-layout {
+    margin-bottom: 15px;
+    padding: 15px 20px 5px 20px;
+}
+
+.box-chothue a {
+    display: flex;
+    padding: 7px 0;
+    justify-content: space-between;
+}
+.box-chothue .box-chothue-text {
+    display: flex;
+    justify-content: space-between;
+
 }
