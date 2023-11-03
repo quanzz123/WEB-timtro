@@ -304,13 +304,26 @@ body {
 }
 
 .content-items .item-img {
+    margin: 15px 0;
     flex: 1; /* Khối 1 sẽ chiếm 1 phần đều của không gian flex */
-    padding: -5px; /* Điều chỉnh khoảng cách bên trong khối 1 nếu cần */
+    /* padding: -5px; Điều chỉnh khoảng cách bên trong khối 1 nếu cần */
+}
+
+.content-items .item-img .fa-heart {
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color:rgba(221, 206, 206, 0.5)
 }
 
 .content-items .item-img img {
     border-radius: 8px;
     width: 84%;
+    transition: transform 0.3s;
+}
+.content-items .item-img:hover img {
+    transform: scale(1.08);
 }
 
 .content-items .item-text {
@@ -324,6 +337,18 @@ body {
     display: flex;
     align-items: center;
     padding-top: 20px;
+    
+}
+
+.item-text .nhadat-title a {
+    text-decoration: none;
+    color:#568c3e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item-text .nhadat-title a:hover {
+    color: #DF2D2B;
 }
 
 .content-items .item-text .nhadat-info {
@@ -332,11 +357,43 @@ body {
 
 }
 
+.item-text .nhadat-info .nhadat-price {
+    font-size: 17px;
+    color: #DF2D2B;
+    font-weight: bold;
+}
+
+.item-text .nhadat-info .nhadat-acreage {
+    font-size: 13px;
+
+}
+ 
+.item-text .nhadat-info .nhadat-address {
+    font-size: 13px;
+
+}
+ 
+.item-text .nhadat-info .nhadat-times {
+    font-size: 12px;
+    color: rgb(192, 192, 192);
+
+}
+
 .content-items .item-text .nhatdat-user {
     position: absolute;
     bottom: 5px;
     display: flex;
     align-items: center;
+}
+
+.item-text .nhatdat-user img {
+    border-radius: 50%;
+}
+.item-text .nhatdat-user .user-name {
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #568c3e;
 }
 #sidebar {
    
