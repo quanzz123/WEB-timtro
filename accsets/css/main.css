@@ -494,3 +494,13 @@ body {
 .box-dientich .dientich-grid>a:hover {
     color:#568c3e;
 }
+
+.box-baidang {
+
+}
+
+.box-baidang img {
+    width: 65px;
+    height: 65px;
+    border-radius: 4px;
+}
