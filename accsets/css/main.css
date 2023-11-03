@@ -405,15 +405,34 @@ body {
 #sidebar .box-layout {
     margin-bottom: 15px;
     padding: 15px 20px 5px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #EEEEEE;
+}
+#sidebar .box-layout .sidebar-title-left {
+    color:#568c3e;
+    font-weight: bold;
 }
 
 .box-chothue a {
     display: flex;
     padding: 7px 0;
     justify-content: space-between;
+    text-decoration: none;
+    border-bottom: 2px solid #EEEEEE ;
+    color: #000;
+    font-size: 14px;
+    
 }
+
+
 .box-chothue .box-chothue-text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
 
+.box-chothue .box-chothue-text i {
+    font-size: 12px;
+    opacity: 0.2;
 }
