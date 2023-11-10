@@ -836,3 +836,11 @@ body {
     font-weight: bold;
 }
 
+
+.tab {
+            display: none;
+        }
+
+        .active-tab {
+            display: block;
+        }

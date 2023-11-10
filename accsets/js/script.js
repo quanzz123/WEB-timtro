@@ -25,4 +25,36 @@ heartIcons.forEach((icon) => {
   });
 });
 
+// phân trang
+
+var currentPage = 1;
+var totalTabs = 3;
+
+// JavaScript để xử lý sự kiện khi tab được nhấp
+function openTab(tabId) {
+    // Ẩn tất cả các tab
+    var tabs = document.getElementsByClassName('tab');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active-tab');
+    }
+
+    // Hiển thị tab được chọn
+    var selectedTab = document.getElementById(tabId);
+    selectedTab.classList.add('active-tab');
+}
+
+// JavaScript để xử lý sự kiện khi chuyển trang
+function changePage(offset) {
+    currentPage += offset;
+    if (currentPage < 1) {
+        currentPage = totalTabs;
+    } else if (currentPage > totalTabs) {
+        currentPage = 1;
+    }
+
+    // Hiển thị trang mới
+    openTab('tab' + currentPage);
+}
+
+
 
