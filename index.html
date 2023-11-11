@@ -952,13 +952,24 @@
                 <div class="my-paging">
                   
                     <div class="paging-link">
-                        <a href="#" onclick="changePage(-1)"><i class="fa-solid fa-angles-right fa-rotate-180"></i></a>
-                        <a href="#" onclick="openTab('tab1')" style="background-color: #568c3e; color: #fff">1</a>
-                        <a href="#" onclick="openTab('tab2')">2</a>
-                        <a href="#" onclick="openTab('tab3')">3</a>
+                        <a href="#"  onclick="changePage(-1)"><i class="fa-solid fa-angles-right fa-rotate-180"></i></a>
+                        <a href="#" id="button-tab1" class="tab-button"  onclick="openTab('tab1')" >1</a>
+                        <a href="#" id="button-tab2" class="tab-button"  onclick="openTab('tab2')">2</a>
+                        <a href="#" id="button-tab3" class="tab-button"  onclick="openTab('tab3')">3</a>
                         <a href="#" onclick="changePage(1)"><i class="fa-solid fa-angles-right"></i></a>
                     </div>
+                    <!-- <div class="my-paging">
+                        <div class="paging-link">
+                            <a href="#" onclick="changePage(-1)">⮜</a>
+                            <a href="#" onclick="openTabAndChangePage('tab1', 1)">1</a>
+                            <a href="#" onclick="openTabAndChangePage('tab2', 2)">2</a>
+                            <a href="#" onclick="openTabAndChangePage('tab3', 3)">3</a>
+                            <a href="#" onclick="changePage(1)">⮞</a>
+                        </div>
+                    </div> -->
+                    
                 </div>
+
             </div>
             <!-- end content -->
             <div id="sidebar">

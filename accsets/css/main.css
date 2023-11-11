@@ -303,6 +303,16 @@ body {
     position: relative;
 }
 
+
+.tab {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+
 .content-items .item-img {
     overflow: hidden;
     margin: 15px 0;
@@ -413,7 +423,7 @@ body {
 }
 
 
-#wp-content .my-paging a {
+/* #wp-content .my-paging a {
     padding: 8px 16px;
     background-color: #fff;
     color: #252121;
@@ -424,6 +434,25 @@ body {
 
 #wp-content .my-paging a:hover {
     background-color:#568c3e;
+    color: #fff;
+} */
+
+.my-paging a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #252121;
+    text-decoration: none;
+    border: 2px solid #EEEEEE;
+    border-radius: 3px;
+}
+
+.my-paging a:hover {
+    background-color: #568c3e;
+    color: #fff;
+}
+
+.my-paging a.active-button {
+    background-color: #568c3e;
     color: #fff;
 }
 #sidebar {
@@ -836,11 +865,3 @@ body {
     font-weight: bold;
 }
 
-
-.tab {
-            display: none;
-        }
-
-        .active-tab {
-            display: block;
-        }
