@@ -25,10 +25,41 @@ heartIcons.forEach((icon) => {
   });
 });
 
-// phân trang
-
 var currentPage = 1;
 var totalTabs = 3;
+
+// JavaScript để xử lý sự kiện khi tab được nhấp và chuyển trang
+function openTabAndChangePage(tabId, page) {
+    // Hiển thị tab được chọn
+    openTab(tabId);
+
+    // Chuyển đến trang mới
+    changePage(page);
+}
+
+// JavaScript để xử lý sự kiện khi chuyển trang
+function changePage(page) {
+    currentPage = page;
+    if (currentPage < 1) {
+        currentPage = totalTabs;
+    } else if (currentPage > totalTabs) {
+        currentPage = 1;
+    }
+
+    // Hiển thị trang mới
+    openTab('tab' + currentPage);
+}
+
+// Hàm cập nhật lớp cho nút phân trang
+function updatePagingButtons() {
+    var pagingButtons = document.querySelectorAll('.my-paging a');
+    for (var i = 0; i < pagingButtons.length; i++) {
+        pagingButtons[i].classList.remove('active-button');
+    }
+
+    var selectedPagingButton = document.querySelector('.my-paging a:nth-child(' + (currentPage + 1) + ')');
+    selectedPagingButton.classList.add('active-button');
+}
 
 // JavaScript để xử lý sự kiện khi tab được nhấp
 function openTab(tabId) {
@@ -41,20 +72,7 @@ function openTab(tabId) {
     // Hiển thị tab được chọn
     var selectedTab = document.getElementById(tabId);
     selectedTab.classList.add('active-tab');
+
+    // Thêm và loại bỏ lớp cho nút phân trang
+    updatePagingButtons();
 }
-
-// JavaScript để xử lý sự kiện khi chuyển trang
-function changePage(offset) {
-    currentPage += offset;
-    if (currentPage < 1) {
-        currentPage = totalTabs;
-    } else if (currentPage > totalTabs) {
-        currentPage = 1;
-    }
-
-    // Hiển thị trang mới
-    openTab('tab' + currentPage);
-}
-
-
-
