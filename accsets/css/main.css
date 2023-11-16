@@ -243,6 +243,19 @@ body {
     color:#568c3e;
 } 
 
+.text-chi-trang {
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.text-chi-trang .chitrang-txt {
+    width: 1100px;
+    margin: 0 auto;
+    color: #568C3E;
+    text-transform: uppercase   ;
+}
+
 #wp-content {
    position: relative;
    width: 1100px;
@@ -966,16 +979,21 @@ body {
     height: 450px;
 }
 
+
+#content-lh .tit-lh {
+    
+}
 #content-lh h4 {
     /* text-align: center; */
     text-transform: uppercase;
     margin-top: 20px;
     margin-left: 20px;
     color: #fff;
+    padding: 20px 0;
 }
 
 #content-lh p {
-    margin-top: 20px;
+    
     margin-left: 20px;
     color: #fff;
     
@@ -983,6 +1001,11 @@ body {
 
 #sidebar-lh {
     width: 50%;
+}
+
+#sidebar-lh h2 {
+    color: #568C3E;
+    padding: 10px 0;
 }
 
 
@@ -1034,3 +1057,133 @@ body {
   }
 
 
+  #wp-content-dn {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+  }
+/* trang đăng nhập */
+.login-box {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .login-box h2 {
+    color: #568C3E;
+    margin-bottom: 20px;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-box label {
+    margin-bottom: 8px;
+  }
+  
+  .login-box input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .login-box .remember-forgot {
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .login-box button {
+    background-color: #568C3E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  .login-box button:hover {
+    background-color: #8FC33D;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    color: #568C3E;
+    float: right;
+  }
+  
+  .login-box a:hover {
+    text-decoration: underline;
+  }
+
+  /* trang đăng kí */
+
+  #wp-content-dk {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  }
+
+  .signup-box {
+    width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  }
+
+  .signup-box h2 {
+    color: #568C3E;
+    margin-bottom: 5px;;
+  }
+
+ .signup-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-box label {
+    margin-bottom: 8px;
+    color: #7e7b7bcc;
+  }
+  
+  .signup-box input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .signup-box button {
+    background-color: #568C3E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .signup-box button:hover {
+    background-color: #8FC33D;
+  }
+
+  .signup-box p {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+  }
+
+  .signup-box .remember-forgot a {
+    color:#568C3E;
+  }
