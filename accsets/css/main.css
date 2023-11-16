@@ -949,3 +949,88 @@ body {
     }
 }
 
+
+
+/* page liêh hệ */
+#wp-content-lh {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px
+}
+
+#content-lh {
+    width: 50%;
+    background: linear-gradient(135deg,#1f6400,#568c3e57);
+    height: 450px;
+}
+
+#content-lh h4 {
+    /* text-align: center; */
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+#content-lh p {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #fff;
+    
+}
+
+#sidebar-lh {
+    width: 50%;
+}
+
+
+
+
+.contact-box {
+   
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #cccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #cccc;
+
+  }
+  
+  button {
+    background-color: #568c3e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8FC33D;
+  }
+
+
+  .contact-box h2 {
+    font-size: 18px;
+  }
+
+
