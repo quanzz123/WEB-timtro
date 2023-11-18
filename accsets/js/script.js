@@ -93,4 +93,33 @@ window.onclick = function(event) {
             }
         }
     }
-};   
+};  
+
+
+// document.querySelector("#show-loaihinh") .addEventListener("click", function(){
+//     document.querySelector(".popup-loaihinh").classList.add("active");
+//     });
+//         document.querySelector(".popup-loaihinh .close-btn").addEventListener("click", function(){
+//     document.querySelector(".popup-loaihinh").classList.remove("active");
+//     });
+
+
+    document.querySelector("#show-loaihinh").addEventListener("click", function(){
+        document.querySelector(".popup-loaihinh").classList.add("active");
+        document.querySelector(".overlay").style.display = "block";
+    });
+
+    // document.querySelector("#show-loaihinh").addEventListener("click", function(){
+    //     document.querySelector(".popup-register").classList.add("active");
+    //     document.querySelector(".overlay").style.display = "block";
+    // });
+
+    document.querySelectorAll(".popup-loaihinh .close-btn").forEach(function(closeBtn){
+        closeBtn.addEventListener("click", function(){
+            document.querySelectorAll(".popup-loaihinh").forEach(function(popup){
+                popup.classList.remove("active");
+            });
+            document.querySelector(".overlay").style.display = "none";
+        });
+    });
+

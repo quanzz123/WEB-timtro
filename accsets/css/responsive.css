@@ -22,9 +22,10 @@
     }
     
     .menu-res  {
+        /* width: 100%; */
         max-width: 400px;
         display: flex;
-       
+        margin: 0 auto;
         background-color: #fff;
         position: relative;
         z-index: 2;
@@ -122,3 +123,4 @@
         display: block;
     }
 }
+
