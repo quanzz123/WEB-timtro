@@ -150,7 +150,7 @@ body {
     border-radius: 8px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-53%);
     display: flex;
     justify-content: space-around;
     align-items: center;
