@@ -314,13 +314,13 @@ body {
     width: 1100px;
     margin: 0 auto;
     color: #568C3E;
-    text-transform: uppercase   ;
+    text-transform: uppercase;
 }
 
 #wp-content {
    position: relative;
    width: 1100px;
-   min-height: 1500px;
+   /* min-height: 1500px; */
    margin: 0 auto;
    display: flex;
    
@@ -935,6 +935,9 @@ body {
 .menu-res {
     display: none;
 }
+.menu-bottom {
+    display: none;
+}
 /* moblie */
 
 
@@ -949,7 +952,7 @@ body {
 }
 
 #content-lh {
-    width: 50%;
+    width: 100%;
     background: linear-gradient(135deg,#1f6400,#568c3e57);
     height: 450px;
 }
@@ -961,7 +964,7 @@ body {
 #content-lh h4 {
     /* text-align: center; */
     text-transform: uppercase;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 20px;
     color: #fff;
     padding: 20px 0;
@@ -975,7 +978,7 @@ body {
 }
 
 #sidebar-lh {
-    width: 50%;
+    width: 100%;
 }
 
 #sidebar-lh h2 {
@@ -988,7 +991,7 @@ body {
 
 .contact-box {
    
-    width: 500px;
+    width: 100%;
     padding: 20px;
     border: 1px solid #cccc;
     border-radius: 8px;
@@ -1033,7 +1036,7 @@ body {
 
 
   #wp-content-dn {
-  
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1103,6 +1106,7 @@ body {
   /* trang đăng kí */
 
   #wp-content-dk {
+    position: relative;
     display: flex;
   justify-content: center;
   align-items: center;

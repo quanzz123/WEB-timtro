@@ -1,4 +1,4 @@
-@media (max-width: 400px) {
+@media (max-width: 499px) {
 
     body {
         font-size: 1rem;
@@ -37,6 +37,9 @@
         width: 100% !important;
        /* margin: 0 auto; */
        display: flex ;
+       justify-content: space-between;
+       /* position: fixed; */
+
     } 
     .menu-res-cnt .res-menu-img {
         width: 50%;
@@ -129,7 +132,7 @@
 
     #content {
         width: 90% !important;
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .content-items {
@@ -166,9 +169,34 @@
     }
 
     #sidebar {
+        position: relative;
+        margin-top: 20px;
         width: 90% !important;
         margin: 0 auto;
 
+    }
+
+    /* page liên hệ */
+    #wp-content-lh {
+        display: block;
+        
+    }
+
+    /* page đăng kí */
+    #wp-content-dk {
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .signup-box {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .login-box {
+        margin: 0 auto !important;
+        width: 90%;
     }
 
     .loinhan-container {
@@ -212,6 +240,55 @@
 
     #footer .footer-ctn {
         width: 100%;
+    }
+
+    .menu-bottom {
+        width: 100% !important;
+    /* max-width: 400px; */
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(255, 252, 252, 0.5);
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+    bottom: 0px;
+    
+
+    }
+    .menu-bottom .menu-bottom-ctn {
+        margin: 0 auto;
+        width: 90%;
+        /* position: fixed; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .menu-bottom .menu-bottom-ctn .menu-bottom-ctn-add {
+        background-color: #568c3e;
+        border-radius: 50%;
+    }
+
+    .menu-bottom-ctn-add a i {
+        color: #fff;
+    }
+    .menu-bottom .menu-bottom-ctn .mb {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .mb a i {
+        color: #000;
+        font-size: 25px;
+    }
+    .mb a i:hover {
+        color: #568c3e;
     }
 }
 

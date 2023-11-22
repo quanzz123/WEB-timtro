@@ -49,7 +49,7 @@
                         <li><a href="cho-thue-can-ho.html">Cho thuê căn hộ</a></li>
                         <li><a href="cho-thue-mat-bang.html">Cho thuê mặt bằng</a></li>
                         <li><a href="tim-nguoi-o-ghep.html">Tìm người ở ghép</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Blog</a></li>
                         <li><a href="#">Hướng dẫn</a></li>
                         <li><a href="#" style="background-color: red;">Liên hệ</a></li>
                     </ul>
@@ -58,6 +58,26 @@
             </div>
             
             
+        </div>
+
+        <div class="menu-bottom">
+            <div class="menu-bottom-ctn">
+                <div class="mb menu-bottom-ctn-home">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <div class="mb menu-bottom-ctn-heart">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+                <div class="mb menu-bottom-ctn-add">
+                    <a href="#"><i class="fa-solid fa-plus" style="color:#fff"></i></a>
+                </div>
+                <div class="mb menu-bottom-ctn-dn">
+                    <a href="dang-nhap.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+                <div class="mb menu-bottom-ctn-dk">
+                    <a href="dang-ki.html"><i class="fa-solid fa-user-plus"></i></a>
+                </div>
+            </div>
         </div>
         <div class="menu-res">
            <div class="menu-res-cnt">
@@ -68,10 +88,15 @@
                 <div class="dropdown">
                     <button onclick="toggleDropdown()" class="dropbtn"><i class="fa-solid fa-bars"></i> Danh mục</button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Trang chủ</a>
-                        <a href="#">Dịch vụ</a>
-                        <a href="#">Sản phẩm</a>
-                        <a href="#">Liên hệ</a>
+                        <a href="index.html">Trang chủ</a>
+                            <a href="cho-thue-phong.html">Cho thuê phòng trọ</a>
+                            <a href="nha-cho-thue.html">nhà cho thuê</a>
+                            <a href="cho-thue-can-ho.html">Cho thuê căn hộ</a>
+                            <a href="cho-thue-mat-bang.html">Cho thuê mặt bằng</a>
+                            <a href="tim-nguoi-o-ghep.html">Tìm người ở ghép</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="#">Hướng Dẫn</a>
+                            <a href="#">Liên Hệ</a>
                     </div>
                 </div>
             
@@ -87,38 +112,45 @@
                 <buton class="filte-btn search"  type="submit"><i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</buton>
             </div>
         </div>
-        <div class="text-chi-trang">
-            <div class="chitrang-txt">
-                trang chủ / liên hệ
+        <div id="gioi-thieu" style="background-color: #fff; padding: 20px 0;">
+            <div class="gioi-thieu-text">
+                <h2 class="gt-title" style="color:#568c3e">trang chủ / liên hệ</h2>
+                <p class="gt-subtitle" style="display: none;">Website đăng tin cho thuê phòng trọ, nhà nguyên căn, căn hộ, ở ghép nhanh,
+                    hiệu quả với 100.000+ tin đăng và 2.500.000 lượt xem mỗi tháng.</p>
             </div>
-        </div>
+    </div>
         
-        <div id="wp-content-lh">
+        <div id="wp-content">
             <!-- begin content -->
-            <div id="content-lh">
-                <h4 class="tit-lh">nhóm đồ án đại học vinh</h4>
-                <h4>tổng đài cskh: 014343435</h4>
-                <p>Email: nguyenquandc37@gmail.com</p>
-                <p>Địa chỉ: Đại Học Vinh</p>
+            <div id="content" style="flex: 1">
+                <div id="content-lh">
+                    <h4 class="tit-lh">nhóm đồ án đại học vinh</h4>
+                    <h4>tổng đài cskh: 014343435</h4>
+                    <p>Email: nguyenquandc37@gmail.com</p>
+                    <p>Địa chỉ: Đại Học Vinh</p>
+                </div>
             </div>
-            <div id="sidebar-lh">
-                <!-- <h4>liên hệ trực tuyến</h4> -->
-                <div class="contact-box">
-                    <h2>Liên hệ trực tuyến</h2>
-                    <form>
-                      <label for="fullName">Họ tên của bạn:</label>
-                      <input type="text" id="fullName" name="fullName" required placeholder="Họ tên">
-                
-                      <label for="phoneNumber">Số điện thoại:</label>
-                      <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Số điện thoại">
-                
-                      <label for="message">Nội dung:</label>
-                      <textarea id="message" name="message" rows="4" required placeholder="Nội dung"></textarea>
-                
-                      <button type="submit">Gửi</button>
-                    </form>
-                  </div>
+            <div id="sidebar" style="flex: 1">
+                <div id="sidebar-lh">
+                    <!-- <h4>liên hệ trực tuyến</h4> -->
+                    <div class="contact-box">
+                        <h2>Liên hệ trực tuyến</h2>
+                        <form>
+                          <label for="fullName">Họ tên của bạn:</label>
+                          <input type="text" id="fullName" name="fullName" required placeholder="Họ tên">
+                    
+                          <label for="phoneNumber">Số điện thoại:</label>
+                          <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Số điện thoại">
+                    
+                          <label for="message">Nội dung:</label>
+                          <textarea id="message" name="message" rows="4" required placeholder="Nội dung"></textarea>
+                    
+                          <button type="submit">Gửi</button>
+                        </form>
+                      </div>
+                </div>
             </div>
+            
            
         </div>
         <div class="loinhan-container">
