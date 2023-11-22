@@ -47,11 +47,11 @@
     }
 
     .menu-res-cnt .menu-res-sideber {
-      /* float: right; */
-      width: 50%;
+      float: right;
+      /* width: 50%; */
     }
     .menu-res-cnt .menu-res-sideber .dropdown {
-        float: right;
+        /* float: right; */
     }
     .dropbtn {
         background-color: #fff;
@@ -132,6 +132,39 @@
         margin: 0 auto;
     }
 
+    .content-items {
+        display: flex;
+    }
+
+    .content-items .item-img {
+        flex: 1.5;
+    }
+
+    .content-items .item-img i {
+        position: absolute !important;
+        top: 20px;
+    }
+
+    .content-items .item-text {
+        flex: 2;
+    }
+
+    .content-items .item-text .nhadat-title {
+        font-size: 14px;
+    }
+
+    .item-text .nhadat-info {
+        /* display: grid !important;
+        grid-template-columns: repeat(2, 1fr); */
+        display: block !important;
+        margin-top: 15px;
+
+    }
+
+    .item-text .nhadat-info .nhadat-price {
+        font-size: 14px;
+    }
+
     #sidebar {
         width: 90% !important;
         margin: 0 auto;
@@ -142,8 +175,23 @@
         width: 100%;
     }
 
+    .loinhan-statistical {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 15px;
+        gap: 5px;
+    }
+
     .support-container {
         width: 100%;
+    }
+
+    .support-list-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        grid-row-gap: 15px;
+
     }
 
     .support-container .support-content img {
