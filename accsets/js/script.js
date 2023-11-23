@@ -104,5 +104,25 @@ document.querySelector("#show-loaihinh") .addEventListener("click", function(){
     });
 
 
+    // slide
+   
+      let currentIndex = 0;
+  const totalSlides = document.querySelectorAll('.slide').length;
+
+  function updateSlidePosition() {
+    const slides = document.querySelector('.slides');
+    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlidePosition();
+  }
+
    
 

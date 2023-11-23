@@ -12,6 +12,49 @@ body {
     background-color: #F4F2F0;
 }
 
+/* slide */
+.slider-container {
+    position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Thêm kiểu cho mũi tên chuyển đổi */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
 #wrapper {
     width: 100%;
     min-height: 500px;
@@ -1166,3 +1209,37 @@ body {
   .signup-box .remember-forgot a {
     color:#568C3E;
   }
+
+  /* các bài post */
+  #content .post-header {
+    margin-left: 36px;
+    padding: 15px 0;
+  }
+
+  .post-header .post-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #1c7e22;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+   .post-header .post-title:hover {
+    color: red;
+   }
+
+   .post-address {
+    margin-bottom: 10px;
+   }
+
+   .post-address i {
+    color: #DF2D2B;
+   }
+
+   .post-attributes {
+    display: flex;
+    justify-content: space-between;
+   }
+   .post-attributes .post-items {
+    color: #777777;
+   }
