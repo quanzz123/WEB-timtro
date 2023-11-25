@@ -6,7 +6,7 @@
 
 
 html {
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
     background-color: #F4F2F0;
@@ -37,6 +37,7 @@ img {
   object-fit: contain;
 }
 
+
 /* Thêm kiểu cho mũi tên chuyển đổi */
 .arrow {
   position: absolute;
@@ -45,13 +46,24 @@ img {
   font-size: 24px;
   cursor: pointer;
   color: #000;
+  background-color: yellow;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
 }
 
 .arrow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   left: 10px;
 }
 
 .arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   right: 10px;
 }
 
@@ -1240,6 +1252,132 @@ img {
     display: flex;
     justify-content: space-between;
    }
+
    .post-attributes .post-items {
     color: #777777;
+   }
+
+   #content .post-main-content {
+    margin-left: 36px;
+   }
+
+   #content .post-main-content h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   }
+
+   #content .post-main-content p {
+    margin: 10px 0;
+    font-size: 14px;
+   }
+
+   #content .post-overview {
+    margin-top: 20px;
+    margin-left: 36px;
+   }
+
+   .post-overview .post-main-cnt-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   }
+
+   .post-overview-content {
+    
+   }
+
+    .post-table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    
+   }
+
+    table {
+        display: table;
+    border-collapse: separate;
+
+    
+    
+    
+   }
+
+   .post-table tr {
+    
+   }
+   .post-table td {
+    padding: 10px;
+    font-size: 14px;
+    
+   }
+
+   .post-table .pos-tab-name {
+    width: 25%;
+   }
+
+   tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+   }
+
+   .post-contact {
+
+    margin-top: 20px;
+   }
+
+   .post-map {
+    margin-top: 20px;
+   }
+
+   .post-map iframe {
+    width: 100%;
+   }
+
+   .post-author .author-avt {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+    border-radius: 50%;
+
+   }
+   .author-txt {
+    font-size: 14px;
+    
+   }
+   .post-author .author-avt>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+    font-size: 30px;
+   }
+
+   .post-author .author-status {
+    text-align: center;
+    margin: 5px 0;
+   }
+
+   .post-author .author-status>i {
+    font-size: 7px;
+    color: #60ed24;
+    
+    
+   }
+   .post-author > a {
+    border: none;
+    left: 50%;
+   }
+
+   .post-author .btn-author {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin: 5px 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+   }
+
+   .btn-author .author-center {
+    margin: 0 auto;
+    text-align: center;
    }
