@@ -1225,6 +1225,7 @@ img {
   /* các bài post */
   #content .post-header {
     margin-left: 36px;
+    /* margin: 0 auto; */
     padding: 15px 0;
   }
 
