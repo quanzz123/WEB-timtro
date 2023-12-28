@@ -28,6 +28,11 @@ body {
 .slide {
   min-width: 100%;
   box-sizing: border-box;
+  height: 317px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  justify-content: center;
   
 }
 
