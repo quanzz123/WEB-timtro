@@ -443,6 +443,10 @@ img {
 
 
 .content-items .item-img {
+    border-radius: 8px;
+
+    width: 80%;
+    height: 90%;
     overflow: hidden;
     margin: 15px 0;
     flex: 1; /* Khối 1 sẽ chiếm 1 phần đều của không gian flex */
@@ -459,7 +463,7 @@ img {
 
 .content-items .item-img img {
     border-radius: 8px;
-    width: 84%;
+    width: 90%;
     /* transition: transform 0.3s; */
     transition: all .3s ease;
     object-fit: cover;
